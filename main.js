@@ -384,30 +384,64 @@ let modeIcon = document.querySelector("i.mode");
 var r = document.querySelector(":root");
 var rs = getComputedStyle(r);
 
+let buddy = document.querySelector("body");
+let overlay = document.querySelector(".overlay");
+
 modeIcon.addEventListener("click", function () {
   if (rs.getPropertyValue("--secondColor") == "#e9e9e9") {
+    overlay.style.setProperty("background-color", "#121212a2");
+
     r.style.setProperty("--secondColor", "#121212");
-    document.body.style.background = "url(../media/Images/darkbgblur.jpg)";
-    document.body.style.backgroundSize = "cover";
-    input.style.background = "url(../media/Images/inputbg.jpg)";
-    input.style.backgroundSize = "cover";
-    addTask.style.background = "url(../media/Images/smallinputbg.jpg)";
-    addTask.style.backgroundSize = "cover";
+
+    buddy.style.setProperty("background", "url(./media/Images/darkbgblur.jpg)");
+    buddy.style.setProperty("background-size", "cover");
+
+    input.style.setProperty("background", "url(./media/Images/inputbg.jpg)");
+    input.style.setProperty("background-size", "cover");
+
+    addTask.style.setProperty(
+      "background",
+      "url(./media/Images/smallinputbg.jpg)"
+    );
+    addTask.style.setProperty("background-size", "cover");
+
     document.querySelectorAll(".delBtn").forEach((btn) => {
-      btn.style.background = "url(../media/Images/smallinputbg.jpg)";
-      btn.style.backgroundSize = "cover";
+      btn.style.setProperty(
+        "background",
+        "url(./media/Images/smallinputbg.jpg)"
+      );
+      btn.style.setProperty("background-size", "cover");
     });
   } else {
+    overlay.style.setProperty("background-color", "#e9e9e9a2");
+
     r.style.setProperty("--secondColor", "#e9e9e9");
-    document.body.style.background = "url(../media/Images/lightbgblur.jpg)";
-    document.body.style.backgroundSize = "cover";
-    input.style.background = "url(../media/Images/lightinputbg.jpg)";
-    input.style.backgroundSize = "cover";
-    addTask.style.background = "url(../media/Images/lightsmallinputbg.jpg)";
-    addTask.style.backgroundSize = "cover";
+
+    buddy.style.setProperty(
+      "background",
+      "url(./media/Images/lightbgblur.jpg)"
+    );
+    buddy.style.setProperty("background-size", "cover");
+
+    input.style.setProperty(
+      "background",
+      "url(./media/Images/lightinputbg.jpg)"
+    );
+    input.style.setProperty("background-size", "cover");
+
+    addTask.style.setProperty(
+      "background",
+      "url(./media/Images/lightsmallinputbg.jpg)"
+    );
+    addTask.style.setProperty("background-size", "cover");
+
     document.querySelectorAll(".delBtn").forEach((btn) => {
-      btn.style.background = "url(../media/Images/lightsmallinputbg.jpg)";
-      btn.style.backgroundSize = "cover";
+      btn.style.setProperty(
+        "background",
+        "url(./media/Images/lightsmallinputbg.jpg)"
+      );
+
+      btn.style.setProperty("background-size", "cover");
     });
   }
 });
