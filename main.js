@@ -49,7 +49,11 @@ function myFunction(x) {
       tasks.style.display = "block";
       form.style.display = "flex";
       numHolder.style.display = "block";
-      delAll.style.display = "block";
+      if (tasks.children.length != 0) {
+        delAll.style.display = "block";
+      } else {
+        delAll.style.display = "none";
+      }
       footer.style.display = "block";
 
       setTimeout(function () {
