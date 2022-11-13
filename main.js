@@ -168,7 +168,7 @@ function addTasksToPage(tasksHolderArr) {
     setTimeout(function () {
       if (rs.getPropertyValue("--secondColor") == "#e9e9e9") {
         document.querySelectorAll(".delBtn").forEach((btn) => {
-          btn.style.background = "url(../media/Images/lightsmallinputbg.jpg)";
+          btn.style.background = "url(./media/Images/lightsmallinputbg.jpg)";
           btn.style.backgroundSize = "cover";
         });
       }
