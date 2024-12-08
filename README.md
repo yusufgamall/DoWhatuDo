@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center" >
-  <a href="https://cisjoe.github.io/DoWhatuDo">cisjoe.github.io/DoWhatuDo</a>
+  <a href="https://yusufgamall.github.io/DoWhatuDo">cisjoe.github.io/DoWhatuDo</a>
 </p>
 
 <p align="center" >
@@ -57,4 +57,4 @@
 
 <h3 align="center">Guide</h3>
 
-![guide](https://github.com/cisjoe/DoWhatuDo/assets/105171436/52331d43-8d2e-40a6-897e-f75368becc07)
+![guide](https://github.com/yusufgamall/DoWhatuDo/assets/105171436/52331d43-8d2e-40a6-897e-f75368becc07)
